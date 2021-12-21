@@ -8,6 +8,7 @@ Besides BeautifulSoup, all libraries I used are standard Python built-in librari
 # SAMPLE INPUT TO RUN MY CODE:
 
 1) first cd to my final project folder (below is my own path, but you should enter yours depending on where you stored the folder)
+
 cd 'Google Drive'/'My Drive'/Classes/'DSCI 510'/HW5/'Lou-Lan(Sherry)-DSCI510-project'
 
 2) run the analysis .py file (3 scrapers are imported as modules in the analysis .py file, so no need to run the three scrapers separately like in HW4)
@@ -21,36 +22,49 @@ python scraper_and_complete_analysis.py —static
 python scraper_and_complete_analysis.py
 
 3) (optional) in case you want to check and run the three scrapers .py files, you can follow the below instructions (however no need to do so since all three scrapers are imported as modules into 'scraper_and_complete_analysis.py', so the information below is only for your reference)
+
 	a) three ways to run the 'top_250_movies_web_scraper.py'
+	
 	-- only getting five entries and store in database
+	
 	python top_250_movies_web_scraper.py —scrape
 
 	-- use the static csv I already scraped beforehand and store in database
+	
 	python top_250_movies_web_scraper.py —static 'data/top-250-movies-basic-info.csv'
 
 	-- scrape the entire website and store in database
+	
 	python top_250_movies_web_scraper.py
 
 
 	b) three ways to run the 'more_movies_info_API.py'
+	
 	-- only getting five entries and store in database
+	
 	python more_movies_info_API.py —scrape
 
 	-- use the static csv I already scraped beforehand and store in database
+	
 	python more_movies_info_API.py —static 'data/more-movies-info.csv'
 
 	-- scrape the entire website and store in database
+	
 	python more_movies_info_API.py
 
 
 	c) three ways to run the 'movie_aliases_API.py'
+	
 	-- only getting five entries and store in database
+	
 	python movie_aliases_API.py —scrape
 
 	-- use the static csv I already scraped beforehand and store in database
+	
 	python movie_aliases_API.py —static 'data/movie-aliases.csv'
 
 	-- scrape the entire website and store in database
+	
 	python movie_aliases_API.py
 
 
@@ -59,27 +73,49 @@ python scraper_and_complete_analysis.py
 The output consists of two parts. 
 
 Firstly, there is the text analysis output, like below:
+
 	The top 5 rated movies by IMDB and their rating are: 
+	
 	Top 1: The Shawshank Redemption with rating of 9.220649578673955 and box office of $28699976.0
+	
 	Top 2: The Godfather with rating of 9.14744669786617 and box office of $134966411.0
+	
 	Top 3: The Godfather: Part II with rating of 8.980915536629867 and box office of $47834595.0
+	
 	Top 4: The Dark Knight with rating of 8.97405415507201 and box office of $534858444.0
+	
 	Top 5: 12 Angry Men with rating of 8.940342076396444 and box office of $N/A
+	
 	=========================================
+	
 	The average rating of the top 250 movies is 8.260663574127554
+	
 	The minimum rating of the top 250 movies is 8.019925624066646
+	
 	The maximum rating of the top 250 movies is 9.220649578673955
+	
 	=========================================
+	
 	The average runtime of the top 250 movies is 129.684 mins.
+	
 	The minimum runtime of the top 250 movies is 45 mins.
+	
 	The maximum runtime of the top 250 movies is 321 mins.
+	
 	=========================================
+	
 	The top five directors who have the most movies on the list are respectively: 
+	
 	Top 1: Akira Kurosawa (dir.) with 7 movies.
+	
 	Top 2: Christopher Nolan (dir.) with 7 movies.
+	
 	Top 3: Martin Scorsese (dir.) with 7 movies.
+	
 	Top 4: Stanley Kubrick (dir.) with 7 movies.
+	
 	Top 5: Alfred Hitchcock (dir.) with 6 movies.
+	
 	=========================================
 	The top five actors who have the most movies on the list are respectively: 
 	Top 1: Robert De Niro with 6 movies.
@@ -227,7 +263,9 @@ video -- explanatory video to help you understand how to execute my code and und
 # MAINTAINABILITY & EXTENSIBILITY:
 
 Maintainability:
+
 My code is considered maintainable because anyone can access the code with the running commands mentioned above, and all three code files can be run in the terminal with command line arguments specified above. Besides BeautifulSoup, all libraries I used are standard Python built-in libraries. The user should first install/check the installation of BeautifulSoup and then run the codes in sequence. I also included a 'requirements.txt' so that users can install any packages they don't have in order to run my code. And the Python packages I used have no version dependencies. In addition, there should not be any code deprecation risks because the website I scraped is an official website by IMDB and won't be taken down without any given notice, and the APIs I used is from a credible API website called RapidAPI. The API key is embedded in my python codes and the API key is always accessible given I have subscribed to the two APIs I used from RapidAPI service. Also, since the API key is embedded, there won't be any bad API requests or bad user inputs because no API key input is needed. The user can choose to run the analysis .py file with the static datasets, or with real-time scraping from the three scrapers.
 
 Extensibility:
+
 To maximize extensibility, I built a database of the three datasets I extracted. It is relatively easy to do so since the three datasets can be linked by the primary key of IMDB ID, which is a unique identifier of movies. Also, my code will work even if the top 250 movies changed on the IMDB ranking website because the structure of the HTML code doesn't change, and my web scraping/API data extraction pipeline won't be affected amid data changes. Therefore, further analyses can be conducted on every year's top 250 IMDB movies.
