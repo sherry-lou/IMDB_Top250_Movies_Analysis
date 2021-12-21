@@ -81,35 +81,20 @@ Firstly, there is the text analysis output, like below:
 	Top 4: The Dark Knight with rating of 8.97405415507201 and box office of $534858444.0
 	Top 5: 12 Angry Men with rating of 8.940342076396444 and box office of $N/A
 	=========================================
-	
 	The average rating of the top 250 movies is 8.260663574127554
-	
 	The minimum rating of the top 250 movies is 8.019925624066646
-	
 	The maximum rating of the top 250 movies is 9.220649578673955
-	
 	=========================================
-	
 	The average runtime of the top 250 movies is 129.684 mins.
-	
 	The minimum runtime of the top 250 movies is 45 mins.
-	
 	The maximum runtime of the top 250 movies is 321 mins.
-	
 	=========================================
-	
 	The top five directors who have the most movies on the list are respectively: 
-	
 	Top 1: Akira Kurosawa (dir.) with 7 movies.
-	
 	Top 2: Christopher Nolan (dir.) with 7 movies.
-	
 	Top 3: Martin Scorsese (dir.) with 7 movies.
-	
 	Top 4: Stanley Kubrick (dir.) with 7 movies.
-	
 	Top 5: Alfred Hitchcock (dir.) with 6 movies.
-	
 	=========================================
 	The top five actors who have the most movies on the list are respectively: 
 	Top 1: Robert De Niro with 6 movies.
@@ -213,10 +198,15 @@ Firstly, there is the text analysis output, like below:
 	There is no/low correlation between number of aliases and rating.
 
 Secondly, there are 5 graph outputs. The graphs will show up one by one, which is detailed in 'Project Description.pdf' and the explanatory video. The five graphs are respectively:
+
 	1) Top 250 IMDB Movies Year Distribution
+
 	2) Top 250 IMDB Movies Runtime Distribution
+	
 	3) Top 250 IMDB Movies - Runtime vs. Rating
+	
 	4) Top 250 IMDB Movies - Box Office vs. Rating
+	
 	5) Top 250 IMDB Movies - Number of Aliases vs. Rating
 
 
