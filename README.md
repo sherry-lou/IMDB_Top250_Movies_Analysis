@@ -75,17 +75,11 @@ The output consists of two parts.
 Firstly, there is the text analysis output, like below:
 
 	The top 5 rated movies by IMDB and their rating are: 
-	
 	Top 1: The Shawshank Redemption with rating of 9.220649578673955 and box office of $28699976.0
-	
 	Top 2: The Godfather with rating of 9.14744669786617 and box office of $134966411.0
-	
 	Top 3: The Godfather: Part II with rating of 8.980915536629867 and box office of $47834595.0
-	
 	Top 4: The Dark Knight with rating of 8.97405415507201 and box office of $534858444.0
-	
 	Top 5: 12 Angry Men with rating of 8.940342076396444 and box office of $N/A
-	
 	=========================================
 	
 	The average rating of the top 250 movies is 8.260663574127554
