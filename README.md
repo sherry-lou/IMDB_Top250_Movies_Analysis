@@ -11,6 +11,7 @@ Besides BeautifulSoup, all libraries I used are standard Python built-in librari
 cd 'Google Drive'/'My Drive'/Classes/'DSCI 510'/HW5/'Lou-Lan(Sherry)-DSCI510-project'
 
 2) run the analysis .py file (3 scrapers are imported as modules in the analysis .py file, so no need to run the three scrapers separately like in HW4)
+
 -- static mode command line
 
 python scraper_and_complete_analysis.py —static
@@ -21,35 +22,35 @@ python scraper_and_complete_analysis.py
 
 3) (optional) in case you want to check and run the three scrapers .py files, you can follow the below instructions (however no need to do so since all three scrapers are imported as modules into 'scraper_and_complete_analysis.py', so the information below is only for your reference)
 	a) three ways to run the 'top_250_movies_web_scraper.py'
-	# only getting five entries and store in database
+	-- only getting five entries and store in database
 	python top_250_movies_web_scraper.py —scrape
 
-	# use the static csv I already scraped beforehand and store in database
+	-- use the static csv I already scraped beforehand and store in database
 	python top_250_movies_web_scraper.py —static 'data/top-250-movies-basic-info.csv'
 
-	# scrape the entire website and store in database
+	-- scrape the entire website and store in database
 	python top_250_movies_web_scraper.py
 
 
 	b) three ways to run the 'more_movies_info_API.py'
-	# only getting five entries and store in database
+	-- only getting five entries and store in database
 	python more_movies_info_API.py —scrape
 
-	# use the static csv I already scraped beforehand and store in database
+	-- use the static csv I already scraped beforehand and store in database
 	python more_movies_info_API.py —static 'data/more-movies-info.csv'
 
-	# scrape the entire website and store in database
+	-- scrape the entire website and store in database
 	python more_movies_info_API.py
 
 
 	c) three ways to run the 'movie_aliases_API.py'
-	# only getting five entries and store in database
+	-- only getting five entries and store in database
 	python movie_aliases_API.py —scrape
 
-	# use the static csv I already scraped beforehand and store in database
+	-- use the static csv I already scraped beforehand and store in database
 	python movie_aliases_API.py —static 'data/movie-aliases.csv'
 
-	# scrape the entire website and store in database
+	-- scrape the entire website and store in database
 	python movie_aliases_API.py
 
 
@@ -200,15 +201,25 @@ Then, if I choose to use the static mode, my three scrapers will store the three
 # FILE CLARIFICATION IN MY PROJECT FOLDER:
 
 scraper_and_complete_analysis.py  -- the final analysis .py file (the only one you need to run)
+
 top_250_movies_web_scraper.py -- the first web scraper
+
 more_movies_info_API.py -- the second scraper using API
+
 movie_aliases_API.py -- the third scraper using API
+
 top_250_movies.db -- database where I store my data (no matter using static mode or real-time scraping mode, data will be stored in this database)
+
 data_structure.png -- a picture of my data structure
+
 requirements.txt
+
 Project Description.pdf -- analysis report
+
 'data' folder -- static data csv files
+
 'graphs' folder -- the graphs generated when running the analysis (I saved them in this folder for your reference)
+
 video -- explanatory video to help you understand how to execute my code and understand my analysis
 
 
