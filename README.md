@@ -200,7 +200,6 @@ Firstly, there is the text analysis output, like below:
 Secondly, there are 5 graph outputs. The graphs will show up one by one, which is detailed in 'Project Description.pdf' and the explanatory video. The five graphs are respectively:
 
 	1) Top 250 IMDB Movies Year Distribution
-
 	2) Top 250 IMDB Movies Runtime Distribution
 	
 	3) Top 250 IMDB Movies - Runtime vs. Rating
