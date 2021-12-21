@@ -201,11 +201,8 @@ Secondly, there are 5 graph outputs. The graphs will show up one by one, which i
 
 	1) Top 250 IMDB Movies Year Distribution
 	2) Top 250 IMDB Movies Runtime Distribution
-	
 	3) Top 250 IMDB Movies - Runtime vs. Rating
-	
 	4) Top 250 IMDB Movies - Box Office vs. Rating
-	
 	5) Top 250 IMDB Movies - Number of Aliases vs. Rating
 
 
