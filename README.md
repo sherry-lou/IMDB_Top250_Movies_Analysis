@@ -1,20 +1,19 @@
 # IMDB_Top250_Movies_Analysis
 
-NECESSARY LIBRARIES:
+# NECESSARY LIBRARIES:
 
 Besides BeautifulSoup, all libraries I used are standard Python built-in libraries. No need for installation of other libraries. Just in case, I also included a 'requirements.txt' so that the users can install any packages they don't have in order to run my code.
 
-================================================
 
-SAMPLE INPUT TO RUN MY CODE:
+# SAMPLE INPUT TO RUN MY CODE:
 
 1) first cd to my final project folder (below is my own path, but you should enter yours depending on where you stored the folder)
 cd 'Google Drive'/'My Drive'/Classes/'DSCI 510'/HW5/'Lou-Lan(Sherry)-DSCI510-project'
 
 2) run the analysis .py file (3 scrapers are imported as modules in the analysis .py file, so no need to run the three scrapers separately like in HW4)
-# static mode command line
+-- static mode command line
 python scraper_and_complete_analysis.py —static
-# real-time scraping mode command line
+-- real-time scraping mode command line
 python scraper_and_complete_analysis.py
 
 3) (optional) in case you want to check and run the three scrapers .py files, you can follow the below instructions (however no need to do so since all three scrapers are imported as modules into 'scraper_and_complete_analysis.py', so the information below is only for your reference)
@@ -49,9 +48,9 @@ python scraper_and_complete_analysis.py
 
 	# scrape the entire website and store in database
 	python movie_aliases_API.py
-================================================
 
-SAMPLE OUTPUT OF MY CODE:
+
+# SAMPLE OUTPUT OF MY CODE:
 
 The output consists of two parts. 
 
@@ -186,17 +185,16 @@ Secondly, there are 5 graph outputs. The graphs will show up one by one, which i
 	4) Top 250 IMDB Movies - Box Office vs. Rating
 	5) Top 250 IMDB Movies - Number of Aliases vs. Rating
 
-================================================
 
-DATA FLOW LOGIC OF MY CODE:
+# DATA FLOW LOGIC OF MY CODE:
 
 For the static portion, I originally used the three scrapers (the codes in each of the three scrapers that are now commented out) to first scrape the three datasets into three csv (which are my three database files in the 'data' folder). 
 
 Then, if I choose to use the static mode, my three scrapers will store the three static csv files as three tables into the 'top_250_movies.db'. If I choose to use the real-time scraping mode, my three scrapers will first scrape the three datasets in real time, and then store them as three tables into the 'top_250_movies.db'. Either way, my three datasets are stores as three separate tables in the 'top_250_movies.db'. In the analysis part, I used SQL language to connect the three datasets and performed relative analyses.
 
-================================================
 
-FILE CLARIFICATION IN MY PROJECT FOLDER:
+
+# FILE CLARIFICATION IN MY PROJECT FOLDER:
 
 scraper_and_complete_analysis.py  -- the final analysis .py file (the only one you need to run)
 top_250_movies_web_scraper.py -- the first web scraper
@@ -211,9 +209,8 @@ Project Description.pdf -- analysis report
 video -- explanatory video to help you understand how to execute my code and understand my analysis
 
 
-================================================
 
-MAINTAINABILITY & EXTENSIBILITY:
+# MAINTAINABILITY & EXTENSIBILITY:
 
 Maintainability:
 My code is considered maintainable because anyone can access the code with the running commands mentioned above, and all three code files can be run in the terminal with command line arguments specified above. Besides BeautifulSoup, all libraries I used are standard Python built-in libraries. The user should first install/check the installation of BeautifulSoup and then run the codes in sequence. I also included a 'requirements.txt' so that users can install any packages they don't have in order to run my code. And the Python packages I used have no version dependencies. In addition, there should not be any code deprecation risks because the website I scraped is an official website by IMDB and won't be taken down without any given notice, and the APIs I used is from a credible API website called RapidAPI. The API key is embedded in my python codes and the API key is always accessible given I have subscribed to the two APIs I used from RapidAPI service. Also, since the API key is embedded, there won't be any bad API requests or bad user inputs because no API key input is needed. The user can choose to run the analysis .py file with the static datasets, or with real-time scraping from the three scrapers.
