@@ -12,8 +12,11 @@ cd 'Google Drive'/'My Drive'/Classes/'DSCI 510'/HW5/'Lou-Lan(Sherry)-DSCI510-pro
 
 2) run the analysis .py file (3 scrapers are imported as modules in the analysis .py file, so no need to run the three scrapers separately like in HW4)
 -- static mode command line
+
 python scraper_and_complete_analysis.py —static
+
 -- real-time scraping mode command line
+
 python scraper_and_complete_analysis.py
 
 3) (optional) in case you want to check and run the three scrapers .py files, you can follow the below instructions (however no need to do so since all three scrapers are imported as modules into 'scraper_and_complete_analysis.py', so the information below is only for your reference)
